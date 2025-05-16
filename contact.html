@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact page</title>
+</head>
+<body>
+  <h1> Contact Us</h1>
+  <form action="mailto:sarojlamsal18@gmail.com" enctype="text/plain" method="post">
+    <p>
+    <label for="email">Email</label>
+    <input type="email" name="mail" placeholder="@example.com" id="email">
+    </p>
+    <p>
+    <label for="username">Username</label>
+    <input type="text" placeholder="saroj123" id="username" required>
+    </p>
+
+    <p>
+      <h3>Choose Your Gender</h3>
+      <label for="male">Male</label>
+      <input value="male" type="radio" name="gender" id="male"> 
+      <label for="female">Female</label>
+      <input value="male" type="radio" name="gender" id="female">
+    </p>
+    <p>
+      <h3>Choose Your Habits</h3>
+      <label for="dance">Dance</label>
+      <input value="dance" type="checkbox" name="habits" id="dance"> 
+      <label for="sing">Sing</label>
+      <input value="sing" type="checkbox" name="habits" id="sing">
+    </p>
+
+    <p>
+      <h3>Select your country</h3>
+      <select name="Country" aria-placeholder="Choose" id="country">
+        <option value="nepal">Nepal</option>
+        <option value="india">India</option>
+        <option value="china">China</option>
+        <option value="iran">Iran</option>
+        <optgroup label="Select Asian country">
+          <option value="Srilanka">Sri Lanka</option>
+          <option value="maldives">Maldives</option>
+        </optgroup>
+      </select>
+    </p>
+
+<p>
+  <textarea cols="30" rows="10" name="Message" id="" placeholder="Type Message"></textarea>
+</p>
+<p>
+  <label for="Date">Please provide date</label>
+  <input type="date" name="date" id="date">
+      </p>
+</p>
+
+    <button type="submit">Submit</button>
+    <button type="reset">Reset</button>
+  </form>
+</body>
+</html>
